@@ -3,16 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>PluginName</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+	<artifactId>AllUWant</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<groupId>io.dpteam</groupId>
 
     <repositories>
-        <!-- CodeMC's Public NMS Repository -->
         <repository>
             <id>codemc-nms-repository</id>
             <url>https://repo.codemc.io/repository/nms/</url>
         </repository>
+		<repository>
+			<id>dmulloy2-repo</id>
+			<url>https://repo.dmulloy2.net/nexus/repository/public/</url>
+		</repository>
     </repositories>
 
     <dependencies>
@@ -21,11 +24,37 @@
             <artifactId>spigot</artifactId>
             <version>1.16.4-R0.1-SNAPSHOT</version>
         </dependency>
+		<dependency>
+			<groupId>com.comphenix.protocol</groupId>
+			<artifactId>ProtocolLib</artifactId>
+			<version>4.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.comphenix.packetwrapper</groupId>
+			<artifactId>PacketWrapper</artifactId>
+			<version>1.13-R0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+            <groupId>io.dpteam</groupId>
+            <artifactId>AllUWant</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.16.4-R0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
         <defaultGoal>clean install</defaultGoal>
-        <finalName>PluginName</finalName>
+        <finalName>AllUWant</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>

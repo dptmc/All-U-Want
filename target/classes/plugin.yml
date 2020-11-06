@@ -1,5 +1,5 @@
 name: All-U-Want
-version: @version@-@apiversion@
+version: 1.0.0-SNAPSHOT-@apiversion@
 description: All-U-Want
 authors: [ DartPower, mister_person ]
 website: https://github.com/dptmc/All-U-Want
